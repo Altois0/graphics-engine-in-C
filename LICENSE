@@ -1,78 +1,14 @@
 This license explains what you can and cant do with my code:
-anyone can use my code for personal purposes, like using PicOs for YOUR OWN microcontroller, ANY other use, comercial or otherwise, including but not limited showing it off in a social media post, or selling any piece of software i write will require my EXPLICIT PERMISSION. you can request said permision via my email
-#include <stdio.h>
+anyone can use my code for personal purposes, like using PicOs for YOUR OWN microcontroller, ANY other use, comercial or otherwise, including but not limited to: 
 
-int main(void) {
-  int position = 0;
-  int repeatMovement = 0;
-  char direction = 0;
-  while (repeatMovement == 0) {
+using my software for classes, either as a teaching point or, for example using PicOs to help students with learning microcontrollers.
 
-    // input
-    printf("ready");
-    scanf("%c", &direction);
-    switch (direction) {
-    case 'a':
-      position--;
-      break;
+selling any piece of software i write
 
-    case 'd':
-      position++;
-      break;
-    case 'n':
-      position = position;
+will require my EXPLICIT PERMISSION. you can request said permision via my email: a.shegatech@gmail.com
 
-    default:
-      printf("error");
-      break;
-    }
+If you choose to contribute to any of my projects you have the rights to the code you write and only the code you write. I suggest using you own license
 
-    // printr
-    switch (position) {
-    case (1):
-      printf("1000000000");
-      break;
+ If this license is ignored, I will personally write a cease and desist, failure to comply further will result in a lawsuit.
 
-    case (2):
-      printf("0100000000");
-      break;
 
-    case (3):
-      printf("0010000000");
-      break;
-
-    case (4):
-      printf("0001000000");
-      break;
-
-    case (5):
-      printf("0000100000");
-      break;
-
-    case (6):
-      printf("0000010000");
-      break;
-
-    case (7):
-      printf("0000001000");
-      break;
-
-    case (8):
-      printf("0000000100");
-      break;
-
-    case (9):
-      printf("0000000010");
-      break;
-
-    case (10):
-      printf("0000000001");
-      break;
-
-    default:
-      printf("error");
-      break;
-    }
-    repeatMovement = 0;
-  }
-}
